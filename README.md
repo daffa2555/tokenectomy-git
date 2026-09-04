@@ -1,8 +1,10 @@
-# Tokenectomy Git 🔀
+# Tokenectomy Git 🔀 — Autonomous Git Workflow & GitHub PR Creation MCP Server
 
 [![Built with Rust](https://img.shields.io/badge/Built%20with-Rust-orange?logo=rust)](https://www.rust-lang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue)](https://modelcontextprotocol.io)
+[![Glama](https://img.shields.io/badge/Glama-MCP%20Server-blueviolet)](https://glama.ai/mcp/servers)
+[![GitHub Stars](https://img.shields.io/github/stars/daffa2555/tokenectomy-git?style=social)](https://github.com/daffa2555/tokenectomy-git)
 
 **Standalone MCP server** that gives AI coding assistants the ability to autonomously create branches, commit fixes, open Pull Requests, and monitor CI status on GitHub.
 

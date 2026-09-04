@@ -68,10 +68,18 @@ fn sanitize_branch_name(name: &str) -> String {
         .collect::<Vec<_>>()
         .join("-");
 
-    if collapsed.is_empty() {
+    let trimmed = collapsed
+        .split('/')
+        .filter(|s| !s.is_empty() && *s != "..")
+        .collect::<Vec<_>>()
+        .join("/");
+
+    let final_name = trimmed.trim_matches(|c| c == '/' || c == '-' || c == '.');
+
+    if final_name.is_empty() || final_name.ends_with(".lock") {
         "fix/tokenectomy-patch".to_string()
     } else {
-        collapsed
+        final_name.to_string()
     }
 }
 
@@ -646,5 +654,14 @@ mod tests {
         let long_msg = "a".repeat(1000);
         let sanitized = sanitize_commit_message(&long_msg);
         assert_eq!(sanitized.len(), 500);
+    }
+
+    #[test]
+    fn test_adversary_fuzz_branch_name_edge_cases() {
+        // Adversary attack vector: leading/trailing slashes produce illegal git ref names
+        let evil_input = "/evil/branch//";
+        let res = sanitize_branch_name(evil_input);
+        assert!(!res.starts_with('/'), "Branch name should not start with slash: {}", res);
+        assert!(!res.ends_with('/'), "Branch name should not end with slash: {}", res);
     }
 }

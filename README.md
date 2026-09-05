@@ -1,5 +1,8 @@
 # Tokenectomy Git 🔀 — Autonomous Git Workflow & GitHub PR Creation MCP Server
 
+[![CI](https://github.com/daffa2555/tokenectomy-git/actions/workflows/ci.yml/badge.svg)](https://github.com/daffa2555/tokenectomy-git/actions/workflows/ci.yml)
+[![Crates.io](https://img.shields.io/crates/v/tokenectomy-git.svg?logo=rust)](https://crates.io/crates/tokenectomy-git)
+[![Security: Audited](https://img.shields.io/badge/Security-Audited%20(RustSec)-2ea44f?logo=rust)](https://github.com/rustsec/advisory-db)
 [![Built with Rust](https://img.shields.io/badge/Built%20with-Rust-orange?logo=rust)](https://www.rust-lang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue)](https://modelcontextprotocol.io)
@@ -51,6 +54,12 @@ Designed to pair with **[Tokenectomy](https://github.com/daffa2555/Tokenectomy)*
 ---
 
 ## 📦 Installation
+
+### ⚡ Install via Cargo (crates.io)
+
+```bash
+cargo install tokenectomy-git
+```
 
 ### 🦀 Build from Source
 

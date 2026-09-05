@@ -2,11 +2,26 @@
 name = "tokenectomy-git"
 version = "1.0.0"
 edition = "2024"
-description = "Git Workflow MCP Server — Autonomous branch, commit, and PR creation for AI coding assistants. Part of the Tokenectomy ecosystem."
+description = "Autonomous Git Workflow & GitHub PR Creation MCP Server for AI coding agents (Claude, Cursor, Cline). Part of Tokenectomy."
 license = "MIT"
 repository = "https://github.com/daffa2555/tokenectomy-git"
-keywords = ["mcp", "git", "ai", "debugging", "automation"]
+homepage = "https://github.com/daffa2555/tokenectomy-git"
+documentation = "https://docs.rs/tokenectomy-git"
+readme = "README.md"
+keywords = ["mcp", "git", "ai-agent", "pull-request", "automation"]
 categories = ["development-tools", "command-line-utilities"]
+
+[package.metadata.docs.rs]
+all-features = true
+
+[lib]
+name = "tokenectomy_git"
+path = "src/lib.rs"
+
+[[bin]]
+name = "tokenectomy-git"
+path = "src/main.rs"
+
 
 [dependencies]
 anyhow = "1.0.104"
@@ -16,3 +31,4 @@ reqwest = { version = "0.13.4", features = ["json", "rustls"] }
 serde = { version = "1.0.229", features = ["derive"] }
 serde_json = "1.0.151"
 tokio = { version = "1.53.1", features = ["full"] }
+

@@ -8,10 +8,12 @@
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue)](https://modelcontextprotocol.io)
 [![Glama](https://img.shields.io/badge/Glama-MCP%20Server-blueviolet)](https://glama.ai/mcp/servers)
 [![GitHub Stars](https://img.shields.io/github/stars/daffa2555/tokenectomy-git?style=social)](https://github.com/daffa2555/tokenectomy-git)
+[![Benchmark History](https://img.shields.io/badge/Benchmarks-Verifiable%20Receipts-blue?logo=github)](https://github.com/daffa2555/tokenectomy-bechmark-history)
 
 **Standalone MCP server** that gives AI coding assistants the ability to autonomously create branches, commit fixes, open Pull Requests, and monitor CI status on GitHub.
 
-Designed to pair with **[Tokenectomy](https://github.com/daffa2555/Tokenectomy)** for end-to-end autonomous bug fixing.
+Designed to pair with **[Tokenectomy](https://github.com/daffa2555/Tokenectomy)** for end-to-end autonomous bug fixing. Check out the verified bare-metal audit receipts in the **[Tokenectomy Benchmark History](https://github.com/daffa2555/tokenectomy-bechmark-history)** repository.
+
 
 ```
                     ┌──────────────────┐

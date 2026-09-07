@@ -12,3 +12,6 @@
 pub mod git_workflow;
 pub mod redact;
 pub mod safety;
+pub mod server;
+
+pub use server::{run_mcp_server, Cli};

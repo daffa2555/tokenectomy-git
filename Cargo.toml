@@ -1,6 +1,7 @@
 [package]
 name = "tokenectomy-git"
-version = "1.0.0"
+version = "1.0.1"
+default-run = "tokenectomy-git"
 edition = "2024"
 description = "Autonomous Git Workflow & GitHub PR Creation MCP Server for AI coding agents (Claude, Cursor, Cline). Part of Tokenectomy."
 license = "MIT"
@@ -21,6 +22,10 @@ path = "src/lib.rs"
 [[bin]]
 name = "tokenectomy-git"
 path = "src/main.rs"
+
+[[bin]]
+name = "tkmy-git"
+path = "src/bin/tkmy-git.rs"
 
 
 [dependencies]

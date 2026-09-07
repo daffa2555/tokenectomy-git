@@ -1,4 +1,4 @@
-// src/main.rs — Tokenectomy Git MCP Server
+// src/bin/tkmy-git.rs — Ergonomic short alias for Tokenectomy Git MCP Server
 use clap::Parser;
 
 #[tokio::main]

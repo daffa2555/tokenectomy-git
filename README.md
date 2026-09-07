@@ -62,6 +62,7 @@ Designed to pair with **[Tokenectomy](https://github.com/daffa2555/Tokenectomy)*
 ```bash
 cargo install tokenectomy-git
 ```
+*Installs both `tokenectomy-git` and its ergonomic short alias `tkmy-git` into `$HOME/.cargo/bin/`.*
 
 ### 🦀 Build from Source
 
@@ -69,7 +70,8 @@ cargo install tokenectomy-git
 git clone https://github.com/daffa2555/tokenectomy-git.git
 cd tokenectomy-git
 cargo build --release
-sudo cp target/release/tokenectomy-git /usr/local/bin/tkmy-git
+sudo cp target/release/tokenectomy-git /usr/local/bin/
+sudo cp target/release/tkmy-git /usr/local/bin/
 ```
 
 ### ⚙️ Install via Smithery (for Claude Desktop)
@@ -85,6 +87,8 @@ npx -y @smithery/cli install tokenectomy-git --client claude
 ### Run as MCP Server
 
 ```bash
+tokenectomy-git --mcp
+# or using the ergonomic short alias:
 tkmy-git --mcp
 ```
 
@@ -94,28 +98,35 @@ tkmy-git --mcp
 
 ### Claude Desktop / Cursor
 
-Add to your MCP config (`claude_desktop_config.json` or Cursor settings):
+Add to your MCP config (`claude_desktop_config.json` or `.cursor/mcp.json`):
 
 ```json
 {
   "mcpServers": {
     "tokenectomy-git": {
-      "command": "tkmy-git",
+      "command": "tokenectomy-git",
       "args": ["--mcp"]
     }
   }
 }
 ```
+*(You can also use `"command": "tkmy-git"` interchangeably).*
 
 ### Google Antigravity
 
-Add to `.gemini/settings.json`:
+Register natively via the Antigravity CLI:
+
+```bash
+agy mcp add tokenectomy-git -- tokenectomy-git --mcp
+```
+
+Or add to `~/.gemini/config/mcp_config.json`:
 
 ```json
 {
   "mcpServers": {
     "tokenectomy-git": {
-      "command": "tkmy-git",
+      "command": "tokenectomy-git",
       "args": ["--mcp"]
     }
   }
@@ -150,11 +161,11 @@ For developers using **Tokenectomy OSS**:
 {
   "mcpServers": {
     "tokenectomy": {
-      "command": "tkmy",
+      "command": "tokenectomy",
       "args": ["--mcp"]
     },
     "tokenectomy-git": {
-      "command": "tkmy-git",
+      "command": "tokenectomy-git",
       "args": ["--mcp"]
     }
   }
@@ -176,7 +187,7 @@ For developers running **Tokenectomy Pro**:
       "args": ["--mcp"]
     },
     "tokenectomy-git": {
-      "command": "tkmy-git",
+      "command": "tokenectomy-git",
       "args": ["--mcp"]
     }
   }

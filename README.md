@@ -1,5 +1,7 @@
 # Tokenectomy Git 🔀 — Autonomous Git Workflow & GitHub PR Creation MCP Server
 
+[![Official MCP Registry](https://img.shields.io/badge/Official%20MCP%20Registry-io.github.Tokenectomy--Labs%2Frazor-brightgreen)](https://registry.modelcontextprotocol.io/)
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/tokenectomy-labs/tokenectomy)
 [![CI](https://github.com/daffa2555/tokenectomy-git/actions/workflows/ci.yml/badge.svg)](https://github.com/daffa2555/tokenectomy-git/actions/workflows/ci.yml)
 [![Crates.io](https://img.shields.io/crates/v/tokenectomy-git.svg?logo=rust)](https://crates.io/crates/tokenectomy-git)
 [![Security: Audited](https://img.shields.io/badge/Security-Audited%20(RustSec)-2ea44f?logo=rust)](https://github.com/rustsec/advisory-db)
@@ -12,7 +14,7 @@
 
 **Standalone MCP server** that gives AI coding assistants the ability to autonomously create branches, commit fixes, open Pull Requests, and monitor CI status on GitHub.
 
-Designed to pair with **[Tokenectomy](https://github.com/daffa2555/Tokenectomy)** for end-to-end autonomous bug fixing. Check out the verified bare-metal audit receipts in the **[Tokenectomy Benchmark History](https://github.com/daffa2555/tokenectomy-bechmark-history)** repository.
+Designed to pair with **[Tokenectomy](https://github.com/Tokenectomy-Labs/Tokenectomy)** for end-to-end autonomous bug fixing. Check out the verified bare-metal audit receipts in the **[Tokenectomy Benchmark History](https://github.com/daffa2555/tokenectomy-bechmark-history)** repository.
 
 
 ```
